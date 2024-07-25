@@ -2,17 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { EtherHackerComponent } from './app.component';
+import { CodeButtonComponent } from './code-button/code-button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    EtherHackerComponent,
+    CodeButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [EtherHackerComponent],
+  exports: []
 })
 export class AppModule { }
